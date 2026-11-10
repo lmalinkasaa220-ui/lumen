@@ -13,88 +13,30 @@
 <title>Люмен Москва Екатеринбург</title>
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <style>
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(fonts/inter-e34c5f.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(fonts/inter-1ab1ad.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(fonts/inter-e34c5f.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(fonts/inter-1ab1ad.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(fonts/inter-e34c5f.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(fonts/inter-1ab1ad.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Oranienbaum';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(fonts/oranienbaum-e980e8.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-@font-face {
-  font-family: 'Oranienbaum';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(fonts/oranienbaum-bef449.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+@font-face{font-family:"ALS Gorizont";font-style:normal;font-weight:100 599;font-display:swap;src:url(fonts/gorizont-medium-exp.woff2) format("woff2")}
+@font-face{font-family:"ALS Gorizont";font-style:normal;font-weight:600 900;font-display:swap;src:url(fonts/gorizont-bold-exp.woff2) format("woff2")}
+@font-face{font-family:"ALS Hauss Next Condensed";font-style:normal;font-weight:100 449;font-display:swap;src:url(fonts/hauss-next-cond-regular.woff2) format("woff2")}
+@font-face{font-family:"ALS Hauss Next Condensed";font-style:normal;font-weight:450 549;font-display:swap;src:url(fonts/hauss-next-cond-medium.woff2) format("woff2")}
+@font-face{font-family:"ALS Hauss Next Condensed";font-style:normal;font-weight:550 900;font-display:swap;src:url(fonts/hauss-next-cond-bold.woff2) format("woff2")}
 /* Layout: тёмная лента разделов по 120 px сверху и снизу, контент 1200 px по центру, два светлых «туманных» раздела как паузы.
-   Палитра и шрифты взяты из макета «Люмен / Foundations» (Figma). Одна тёмная тема намеренно. */
+   Палитра из макета «Люмен / Foundations» (Figma); шрифты ALS Gorizont (заголовки) и ALS Hauss Next Condensed (текст). Одна тёмная тема намеренно. */
 :root{
   --black:#000; --graphite:#0E0E0E; --carbon:#1D1D1F; --steel:#333336; --slate:#6E6E73; --ash:#86868B;
   --porcelain:#F5F5F7; --white:#FFFFFF; --fog:#ECEEE9; --glyph:#CCCCCC;
   --green:#5CE64C; --green-ink:#041A02; --link-light:#1F7A1F;
-  --f-display:"Oranienbaum","Times New Roman",Georgia,serif;
-  --f-text:"Inter",-apple-system,"Segoe UI",system-ui,sans-serif;
+  --f-display:"ALS Gorizont","Arial Black",system-ui,sans-serif;
+  --f-text:"ALS Hauss Next Condensed","Arial Narrow",-apple-system,system-ui,sans-serif;
   --band:120px; --head:64px; --r-card:28px;
+  --t-speed:clamp(96px,calc(96px + 0.06009*(100vw - 375px)),160px); --t-display:clamp(32px,calc(32px + 0.03756*(100vw - 375px)),72px); --t-stat:clamp(64px,calc(64px + 0.03005*(100vw - 375px)),96px); --t-h1:clamp(30px,calc(30px + 0.02441*(100vw - 375px)),56px); --t-h2:clamp(24px,calc(24px + 0.01502*(100vw - 375px)),40px); --t-h3:clamp(22px,calc(22px + 0.00563*(100vw - 375px)),28px); --t-lead:clamp(20px,calc(20px + 0.00376*(100vw - 375px)),24px); --t-title:clamp(19px,calc(19px + 0.00282*(100vw - 375px)),22px); --t-body:clamp(17px,calc(17px + 0.00094*(100vw - 375px)),18px); --t-small:16px; --t-caption:14px; --t-label:14px;
   color-scheme:dark;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{background:var(--black);color:var(--porcelain);font:400 16px/1.5 var(--f-text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{background:var(--black);color:var(--porcelain);font:400 var(--t-body)/1.5 var(--f-text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--black)}
 h1,h2,h3,p{margin:0}
-h1,h2{font-family:var(--f-display);font-weight:400;text-wrap:balance;letter-spacing:-.01em}
+h1,h2{font-family:var(--f-display);font-weight:500;text-wrap:balance;letter-spacing:-.01em}
 a{color:inherit;text-decoration:none}
 :focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:8px}
 .wrap{max-width:1232px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
@@ -104,8 +46,8 @@ a{color:inherit;text-decoration:none}
 .grad{background:linear-gradient(var(--carbon),var(--black) 320px)}
 .fog{background:var(--fog);color:var(--carbon)}
 .head{display:grid;gap:16px;justify-items:center;text-align:center;max-width:980px;margin-inline:auto}
-.head h2{font-size:clamp(40px,5.4vw,72px);line-height:1.1}
-.head p{font-size:clamp(17px,1.8vw,24px);line-height:1.35;color:var(--ash);max-width:34em}
+.head h2{font-size:var(--t-h1);line-height:1.05;letter-spacing:-.015em}
+.head p{font-size:var(--t-lead);line-height:1.35;color:var(--ash);max-width:34em}
 .fog .head p{color:var(--slate)}
 .btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;background:var(--green);color:var(--green-ink);font:500 14px/1 var(--f-text);padding:13px 18px;cursor:pointer;white-space:nowrap}
 .btn:hover{filter:brightness(1.08)}
@@ -115,8 +57,9 @@ a{color:inherit;text-decoration:none}
 .nav{position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px);z-index:20;height:0;margin-top:16px;transition:opacity .3s ease,transform .3s ease}
 .nav.off{opacity:0;transform:translateY(-16px);pointer-events:none;visibility:hidden;transition:opacity .3s ease,transform .3s ease,visibility 0s .3s}
 .nav .bar{display:flex;align-items:center;gap:24px;background:rgb(14 14 14/.82);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-radius:20px;box-shadow:0 0 0 1px #282828;padding:8px 8px 8px 20px;height:56px}
-.logo{display:flex;align-items:center;gap:10px;font:600 20px var(--f-text);margin-right:auto}
-.nav nav{display:flex;gap:22px;font-size:14px}
+.logo{display:flex;align-items:center;gap:10px;font:700 var(--t-title) var(--f-text);margin-right:auto}
+.nav .bar{position:relative}
+.nav nav{display:flex;gap:22px;font:500 var(--t-label)/1.2 var(--f-text);position:absolute;left:50%;transform:translateX(-50%)}
 .nav nav a{color:rgb(245 245 247/.85)}
 .nav nav a:hover{color:var(--white)}
 
@@ -124,69 +67,76 @@ a{color:inherit;text-decoration:none}
 .hero{position:relative;min-height:clamp(640px,62.5vw,900px);display:grid;align-content:end;padding-bottom:clamp(48px,7vw,92px);
   background:radial-gradient(ellipse 34% 16% at 46% 50%,rgb(0 0 0/.62),rgb(0 0 0/.3) 55%,transparent 100%),linear-gradient(rgb(0 0 0/.7),transparent 20%),linear-gradient(transparent 50%,rgb(0 0 0/.85)),url(img/hero.jpg) center/cover no-repeat var(--black)}
 .hero .wrap{display:grid;gap:40px;justify-items:center;text-align:center;padding-top:120px}
-.hero h1{font-size:clamp(44px,6.7vw,96px);line-height:1.12;text-shadow:0 2px 30px rgb(0 0 0/.5)}
-.departs{font-size:14px;color:var(--ash);margin-top:-20px;font-variant-numeric:tabular-nums}
+.hero h1{font-size:var(--t-display);font-weight:700;line-height:1.05;letter-spacing:-.02em;text-shadow:0 2px 30px rgb(0 0 0/.5)}
+.departs{font-size:var(--t-caption);line-height:1.35;color:var(--ash);margin-top:-20px;font-variant-numeric:tabular-nums}
 
 /* панель покупки */
 .search{width:100%;max-width:1040px;display:flex;align-items:center;background:var(--porcelain);color:var(--carbon);border-radius:24px;padding:10px;box-shadow:0 24px 64px rgb(0 0 0/.45);text-align:left}
 .field{flex:1 1 0;min-width:0;display:grid;gap:4px;padding:10px 20px;border-radius:14px}
 .field:focus-within{background:var(--white)}
-.field label{font-size:13px;color:var(--slate)}
-.field input{border:0;background:transparent;font:500 18px var(--f-text);color:var(--carbon);padding:0;width:100%;min-width:0}
+.field label{font-size:var(--t-caption);color:var(--slate)}
+.field input{border:0;background:transparent;font:400 var(--t-body) var(--f-text);color:var(--carbon);padding:0;width:100%;min-width:0}
 .field input:focus{outline:none}
 .swap{flex:0 0 36px;height:36px;border-radius:50%;border:1px solid var(--glyph);background:transparent;display:grid;place-items:center;cursor:pointer;color:var(--slate)}
 .sep{flex:0 0 1px;height:40px;background:var(--glyph)}
 .go{flex:0 0 220px;height:68px;border:0;border-radius:16px;background:var(--green);color:var(--green-ink);cursor:pointer;display:grid;place-content:center;gap:2px;font-family:var(--f-text)}
-.go b{font:600 18px var(--f-text)}
-.go span{font-size:13px;opacity:.75}
+.go b{font:700 var(--t-title) var(--f-text)}
+.go span{font-size:var(--t-caption);opacity:.75}
 .go:hover{filter:brightness(1.06)}
 
-/* сцена 360 */
-.vanish{position:relative;height:260vh;background:var(--black)}
-.vanish .sticky{position:sticky;top:0;height:100vh;height:100svh;display:grid;place-items:center;overflow:hidden}
-.stage{position:relative;width:min(1200px,calc(100vw - 32px));aspect-ratio:1200/760}
-.stage svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
-.bar-r{opacity:0;transform-box:fill-box;transform-origin:center;transition:opacity .35s ease,transform .45s cubic-bezier(.2,.8,.2,1)}
+/* сцена 360: волна света по рельсам, цикл 2 с (из анимации макета) */
+.vanish{position:relative;background:var(--black);padding-block:var(--band);overflow:hidden}
+/* свечение слева: выезжает и разгорается, пока блок поднимается к середине экрана */
 .light{position:absolute;left:-10vw;top:46%;width:110vw;height:min(70vh,640px);transform:translate(-30%,-50%) rotate(-4deg);opacity:0;pointer-events:none;filter:blur(40px);
-  background:radial-gradient(ellipse 95% 50% at 0% 50%,rgb(190 245 180/.9),rgb(110 220 95/.5) 30%,rgb(92 230 76/.2) 60%,transparent 100%);transition:opacity .2s linear,transform .2s linear}
+  background:radial-gradient(ellipse 95% 50% at 0% 50%,rgb(190 245 180/.9),rgb(110 220 95/.5) 30%,rgb(92 230 76/.2) 60%,transparent 100%)}
+.stage{position:relative;width:min(1200px,calc(100vw - 32px));aspect-ratio:1200/760;margin-inline:auto}
+.stage svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.bar-r{opacity:.35;animation:pulse 2s linear infinite paused}
+.vanish.run .bar-r{animation-play-state:running}
+@keyframes pulse{0%{opacity:.35;animation-timing-function:ease-out}15%{opacity:1;animation-timing-function:ease-in-out}45%{opacity:.35}100%{opacity:.35}}
 .speed{position:absolute;left:50%;top:43.4%;transform:translate(-50%,-50%);display:grid;justify-items:center;gap:12px;z-index:2}
-.speed .v{position:relative;display:block}
-.speed b{font:400 clamp(96px,14.6vw,176px)/1 var(--f-display);letter-spacing:-.02em;color:var(--porcelain)}
-.speed i{position:absolute;left:100%;top:.6em;margin-left:8px;font:500 16px var(--f-text);font-style:normal;white-space:nowrap}
-.speed span{font-size:16px;color:var(--ash);text-align:center}
+.speed .v{position:relative;display:flex;align-items:baseline}
+.speed b{font:500 var(--t-speed)/1 var(--f-display);letter-spacing:-.02em;color:var(--porcelain)}
+.speed i{width:0;margin-left:8px;margin-right:-8px;line-height:1;font:500 var(--t-label) var(--f-text);font-style:normal;white-space:nowrap}
+.speed span{font-size:var(--t-small);line-height:1.45;color:var(--ash);text-align:center}
 
 /* магистраль */
 .split{display:grid;grid-template-columns:520px minmax(0,1fr);gap:80px;align-items:start}
-.split h2{font-size:clamp(52px,6.7vw,96px);line-height:1.08}
-.split .lead{font-size:24px;line-height:1.2}
-.split .body{font-size:14px;color:var(--slate);margin-top:20px;max-width:48ch}
-.split .more{display:inline-block;margin-top:20px;font:600 12px var(--f-text);color:var(--link-light)}
-.stats{display:grid;gap:48px;margin-top:40px}
-.stat .n{display:flex;align-items:flex-start;gap:6px}
-.stat b{font:400 120px/1 var(--f-display);letter-spacing:-.02em;font-variant-numeric:lining-nums}
-.stat i{font:500 14px var(--f-text);font-style:normal;color:var(--slate);margin-top:14px}
-.stat p{font-size:14px;margin-top:8px}
+.split h2{font-size:var(--t-h1);line-height:1.05;letter-spacing:-.015em}
+.stats{display:grid;gap:48px}
+.stat .n{display:flex;align-items:baseline;gap:6px}
+.stat b{font:500 var(--t-stat)/1 var(--f-display);letter-spacing:-.02em;font-variant-numeric:lining-nums}
+.stat i{font:500 var(--t-label) var(--f-text);font-style:normal;color:var(--slate)}
+.stat p{font-size:var(--t-caption);line-height:1.35;margin-top:8px}
 
 /* карточки */
 .media{border-radius:var(--r-card);overflow:hidden;background:var(--graphite)}
 .media img{display:block;width:100%;height:auto}
+/* карта маршрута: поезд проходит маршрут за 6 с, станции вспыхивают при прибытии */
+.map{display:block;width:100%;height:auto}
+.map .lbl{font-family:var(--f-text);font-weight:700;fill:var(--porcelain)}
+.map .big{font-family:var(--f-display);font-weight:500;letter-spacing:-.015em;fill:var(--porcelain)}
+.map .river{font:italic 12px Inter,system-ui,sans-serif;fill:var(--ash)}
+.map .st{transform-box:fill-box;transform-origin:center;animation:st 6s linear infinite paused}
+.route-live.run .map .st{animation-play-state:running}
+@keyframes st{0%{transform:scale(1);animation-timing-function:ease-out}2.5%{transform:scale(1.6);animation-timing-function:ease-out}10%{transform:scale(1)}100%{transform:scale(1)}}
 .three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .tile{background:var(--carbon);border-radius:var(--r-card);padding:32px;display:grid;gap:10px;align-content:start;min-width:0}
 .tile svg{width:44px;height:44px;margin-bottom:14px}
-.tile h3{font:600 20px/1.2 var(--f-text)}
-.tile p{font-size:14px;line-height:1.43;color:var(--ash)}
-.fare{background:var(--carbon);border-radius:var(--r-card);padding:36px 32px;display:grid;gap:18px;align-content:start;min-width:0}
-.fare.hl{box-shadow:inset 0 0 0 1px var(--green)}
-.fare .tag{font:600 12px var(--f-text);color:var(--green)}
-.fare h3{font:400 36px/1.1 var(--f-display)}
-.fare .price{font:400 48px/1 var(--f-display)}
-.fare ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:14px;color:var(--ash)}
-.fare .btn{justify-self:start}
-.info{background:var(--white);color:var(--graphite);border-radius:var(--r-card);padding:32px;display:grid;gap:12px;align-content:start;min-width:0}
-.info small{font-size:12px;color:var(--ash)}
-.info h3{font:400 clamp(36px,3.4vw,48px)/1.05 var(--f-display)}
-.info p{font-size:14px;line-height:1.43}
-.info a{font:600 14px var(--f-text);color:var(--link-light);margin-top:4px}
+.tile h3{font:700 var(--t-title)/1.25 var(--f-text)}
+.tile p{font-size:var(--t-small);line-height:1.45;color:var(--ash)}
+.info{background:var(--steel);color:var(--porcelain);border-radius:var(--r-card);padding:32px;display:grid;gap:10px;align-content:start;min-width:0}
+.info small{font-size:var(--t-caption);color:var(--ash)}
+.info h3{font:500 var(--t-h2)/1.1 var(--f-display);letter-spacing:-.01em}
+.info p{font-size:var(--t-small);line-height:1.45}
+.info a{font:500 var(--t-label) var(--f-text);color:var(--green);margin-top:4px}
+
+/* призывы к покупке */
+.cta{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.cta.center{justify-content:center;text-align:center}
+.cta p{font-size:var(--t-small);line-height:1.45;color:var(--ash)}
+.fog .cta p{color:var(--slate)}
+.btn.lg{font-size:16px;padding:18px 28px}
 
 /* фото */
 .carousel{display:grid;gap:32px}
@@ -194,47 +144,45 @@ a{color:inherit;text-decoration:none}
 .track::-webkit-scrollbar{display:none}
 .slide{flex:0 0 min(760px,86%);scroll-snap-align:start;display:grid;gap:16px;margin:0}
 .slide img{width:100%;height:auto;aspect-ratio:760/480;object-fit:cover;border-radius:var(--r-card);display:block;background:#d9dcd5}
-.slide figcaption{display:grid;gap:6px}
-.slide b{font:400 28px/1.15 var(--f-display);font-weight:400;color:var(--carbon)}
-.slide span{font-size:14px;color:var(--slate)}
+.slide figcaption{display:grid;gap:10px;justify-items:start;max-width:620px}
+.slide small{font:500 var(--t-label)/1.2 var(--f-text);color:var(--link-light)}
+.slide a{font:500 var(--t-label) var(--f-text);color:var(--link-light);margin-top:2px}
+.slide a:hover{text-decoration:underline}
+.slide b{font:500 var(--t-h3)/1.15 var(--f-display);letter-spacing:-.005em;color:var(--carbon)}
+.slide span{font-size:var(--t-small);line-height:1.45;color:var(--slate)}
 .cnav{display:flex;justify-content:space-between;align-items:center}
 .dots{display:flex;gap:6px}
 .dots i{width:8px;height:4px;border-radius:2px;background:var(--glyph);transition:width .3s,background .3s}
 .dots i.on{width:32px;background:var(--green)}
-.ctrl{display:flex;align-items:center;gap:12px;font:500 14px var(--f-text);color:var(--slate);font-variant-numeric:tabular-nums}
+.ctrl{display:flex;align-items:center;gap:12px;font:500 var(--t-label) var(--f-text);color:var(--slate);font-variant-numeric:tabular-nums}
 .arr{width:48px;height:48px;border-radius:50%;border:0;display:grid;place-items:center;cursor:pointer;background:var(--carbon);color:var(--porcelain)}
 .arr.prev{background:transparent;box-shadow:inset 0 0 0 1px var(--glyph);color:var(--slate)}
 .arr:disabled{opacity:.4;cursor:default}
 
 /* приложение */
-.app{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start}
+.app{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:stretch}
 .app .phone{border-radius:var(--r-card);overflow:hidden;background:var(--carbon)}
 .app .phone img{display:block;width:100%;height:auto}
-.steps{display:grid;gap:16px}
-.step{background:var(--carbon);border-radius:var(--r-card);padding:28px 32px;display:grid;gap:8px}
-.step h3{font:600 20px/1.2 var(--f-text)}
-.step p{font-size:14px;line-height:1.43;color:var(--ash);max-width:52ch}
 
 /* вопросы */
 .faq{display:grid;grid-template-columns:minmax(0,784fr) minmax(0,400fr);gap:16px;align-items:start}
 .qa{background:var(--carbon);border-radius:var(--r-card);padding:12px 32px}
 details{border-bottom:1px solid var(--steel);padding-block:22px}
 details:last-child{border-bottom:0}
-summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;font:600 20px/1.2 var(--f-text)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;font:700 var(--t-title)/1.25 var(--f-text)}
 summary::-webkit-details-marker{display:none}
 summary::after{content:"+";color:var(--ash)}
 details[open] summary::after{content:"−"}
-details p{margin-top:10px;color:var(--ash);font-size:16px;max-width:60ch}
+details p{margin-top:10px;color:var(--ash);font-size:var(--t-body);line-height:1.5;max-width:60ch}
 .side{display:grid;gap:16px}
-.side .tile small{font-size:12px;color:var(--ash)}
-.side .phone-n{font:400 36px/1.1 var(--f-display);user-select:all}
-.side h3{font:600 20px/1.25 var(--f-text)}
-.strip{background:var(--carbon);border-radius:var(--r-card);padding:32px;display:flex;align-items:center;gap:32px;flex-wrap:wrap}
-.strip .qr{background:#fff;border-radius:16px;padding:9px;line-height:0}
-.strip canvas{width:94px;height:94px}
-.strip h3{font:400 36px/1.1 var(--f-display);flex:1;min-width:220px}
+.side .tile small{font-size:var(--t-caption);color:var(--ash)}
+.side .phone-n{font:500 var(--t-h3)/1.15 var(--f-display);user-select:all;white-space:nowrap}
+.side h3{font:700 var(--t-title)/1.25 var(--f-text)}
+.strip{background:var(--carbon);border-radius:var(--r-card);padding:32px;display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.strip .dl{display:grid;gap:20px}
+.strip h3{font:500 var(--t-h2)/1.1 var(--f-display);letter-spacing:-.01em}
 .stores{display:flex;gap:8px;flex-wrap:wrap}
-footer{border-top:1px solid var(--steel);padding-block:28px 40px;font-size:12px;color:var(--ash)}
+footer{border-top:1px solid var(--steel);padding-block:28px 40px;font-size:var(--t-caption);color:var(--ash)}
 footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
 
 @media (max-width:1040px){
@@ -250,18 +198,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
   :root{--band:88px;--head:48px}
   .field{flex:1 1 100%}
   .swap{display:none}
-  .stat b{font-size:88px}
-  .tile,.info,.fare{padding:28px 24px}
+  .strip{padding:28px 24px}
+  .tile,.info{padding:28px 24px}
   .qa{padding:8px 20px}
-  summary{font-size:17px}
-  .speed span{font-size:14px}
-  .vanish{height:200vh}
 }
 @media (prefers-reduced-motion:reduce){
-  .vanish{height:auto}
-  .vanish .sticky{position:relative;height:auto;padding-block:var(--band)}
-  .bar-r{opacity:1!important;transform:none!important;transition:none}
-  .light{opacity:1!important;transform:translate(0,-50%) rotate(-4deg)!important;transition:none}
+  .bar-r{animation:none;opacity:1}
+  .light{opacity:1!important;transform:translate(0,-50%) rotate(-4deg)!important}
+  .map .st{animation:none}
+  .map #marker{display:none}
 }
 </style>
 </head>
@@ -269,7 +214,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
 
 <div class="nav"><div class="wrap"><div class="bar">
   <a class="logo" href="#top" aria-label="Люмен, наверх"><svg width="28" height="23" viewBox="0 0 28 23" aria-hidden="true"><defs><linearGradient id="lg" x1="-3.36" y1="3.67" x2="15.69" y2="21.1" gradientUnits="userSpaceOnUse"><stop stop-color="#78F061"/><stop offset="1" stop-color="#45C23D"/></linearGradient></defs><path fill="url(#lg)" fill-rule="evenodd" d="M17.15 22.53c1-.3 1-.06.01-3.83-.85-3.26-.86-3.4-.2-3.63.57-.2.71-.15 4.55 1.56 1.82.82 3.4 1.44 3.51 1.4.26-.1 1.67-2 1.67-2.26 0-.11-1.6-.91-3.56-1.79-3.72-1.66-3.96-1.81-3.8-2.32.13-.41.4-.51 4.21-1.48l3.85-.99.62-.16-.11-.52c-.24-1.12-.74-2.21-1.01-2.21-.5 0-9.8 2.45-10.16 2.67-.19.13-.62.79-.95 1.47-.44.92-.94 1.6-1.95 2.65l-1.36 1.4v.47c0 .26.44 2.14.97 4.17.53 2.04.97 3.74.97 3.78 0 .13 1.9-.13 2.74-.38ZM6.16 15.42c2.62-.67 4.93-1.33 5.12-1.45.19-.12.62-.78.95-1.46.44-.93.94-1.6 1.95-2.65l1.36-1.4v-.47c0-.26-.44-2.14-.97-4.17C14.03 1.78 13.6.08 13.6.04c0-.13-1.9.13-2.74.38-1 .3-1 .06-.01 3.83.85 3.26.86 3.4.2 3.63-.57.2-.71.15-4.55-1.56C4.67 5.5 3.09 4.88 2.98 4.92c-.26.1-1.67 2-1.67 2.26 0 .11 1.6.91 3.56 1.79 3.72 1.66 3.96 1.81 3.8 2.32-.13.41-.4.51-4.21 1.48L.62 13.76 0 13.92l.11.52c.24 1.12.74 2.21 1.01 2.21.15 0 2.42-.55 5.04-1.23Z"/></svg>Люмен</a>
-  <nav aria-label="Разделы"><a href="#speed">Скорость</a><a href="#quiet">Тишина</a><a href="#fares">Цены</a><a href="#trip">Поездка</a><a href="#faq">Вопросы</a></nav>
+  <nav aria-label="Разделы"><a href="#speed">Скорость</a><a href="#quiet">Тишина</a><a href="#top">Цены</a><a href="#trip">Поездка</a><a href="#faq">Вопросы</a></nav>
   <a class="btn" href="#top">Купить</a>
 </div></div></div>
 
@@ -277,9 +222,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
   <div class="wrap">
     <h1>Москва — Екатеринбург<br>7 часов 50 минут</h1>
     <form class="search" id="search-top" autocomplete="off">
-      <div class="field"><label for="f-from">Откуда</label><input id="f-from" value="Москва"></div>
+      <div class="field"><label for="f-from">Откуда</label><input id="f-from" name="from" value="Москва"></div>
       <button class="swap" type="button" aria-label="Поменять направление"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h13l-4-4M17 17H4l4 4"/></svg></button>
-      <div class="field"><label for="f-to">Куда</label><input id="f-to" value="Екатеринбург"></div>
+      <div class="field"><label for="f-to">Куда</label><input id="f-to" name="to" value="Екатеринбург"></div>
       <span class="sep"></span>
       <div class="field"><label for="f-date">Когда</label><input id="f-date" value="Завтра, 3 ноября"></div>
       <span class="sep"></span>
@@ -294,66 +239,76 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
 
 <main>
   <section class="vanish" id="speed" aria-label="Максимальная скорость">
-    <div class="sticky">
-      <div class="light" id="light" aria-hidden="true"></div>
-      <div class="stage">
-        <svg id="bars" viewBox="0 0 1200 760" aria-hidden="true"></svg>
-        <div class="speed"><div class="v"><b>360</b><i>км/ч</i></div><span>максимальная скорость на линии</span></div>
-      </div>
+    <div class="light" id="light" aria-hidden="true"></div>
+    <div class="stage">
+      <svg id="bars" viewBox="0 0 1200 760" aria-hidden="true"></svg>
+      <div class="speed"><div class="v"><b>360</b><i>км/ч</i></div><span>максимальная скорость на линии</span></div>
     </div>
   </section>
 
   <section class="band fog">
     <div class="wrap">
       <div class="split">
-        <h2>Первая скоростная магистраль</h2>
-        <div>
-          <p class="lead">Первая в России скоростная магистраль</p>
-          <p class="body">Линия построена только для скоростных пассажирских поездов: без переездов, товарных составов и стыков на рельсах.</p>
-          <a class="more" href="#route">Подробнее о магистрали →</a>
-          <div class="stats">
-            <div class="stat"><div class="n"><b>232</b><i>км/ч</i></div><p>средняя скорость на всём маршруте</p></div>
-            <div class="stat"><div class="n"><b>1 816</b><i>км</i></div><p>новой линии</p></div>
-            <div class="stat"><div class="n"><b>0</b><i>переездов</i></div><p>линия огорожена на всем пути</p></div>
-          </div>
+        <h2>Первая в России скоростная магистраль</h2>
+        <div class="stats">
+          <div class="stat"><div class="n"><b>232</b><i>км/ч</i></div><p>средняя скорость на всём маршруте</p></div>
+          <div class="stat"><div class="n"><b>1 816</b><i>км</i></div><p>новой линии</p></div>
+          <div class="stat"><div class="n"><b>0</b><i>переездов</i></div><p>линия огорожена на всем пути</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="band grad" id="route">
+  <section class="band grad route-live" id="route">
     <div class="wrap">
-      <div class="head"><h2>Без долгих остановок</h2><p>Только две технические остановки: Нижний Новгород и Пермь.</p></div>
-      <div class="media"><img src="img/map.png" width="1200" height="640" alt="Схема маршрута: Москва, Нижний Новгород, Пермь, Екатеринбург. Стоянки в пути 15 минут." loading="lazy"></div>
+      <div class="head"><h2>Без долгих остановок</h2><p>Только две технические остановки: Нижний Новгород и Пермь</p></div>
+      <div class="media">
+        <svg class="map" viewBox="0 0 1200 640" role="img" aria-label="Схема маршрута: Москва, Нижний Новгород, Пермь, Екатеринбург. Стоянки в пути 15 минут.">
+          <rect width="1200" height="640" rx="28" fill="#0E0E0E"/>
+          <path d="M470 0C430 120 520 200 455 300C400 390 480 470 430 640" stroke="#333336" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M720 640C760 520 690 440 740 330C770 260 720 180 760 90" stroke="#333336" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M978.686 224.805L896 307.805L1027 295.305L978.686 224.805Z" fill="#1D1D1D" style="mix-blend-mode:plus-lighter"/>
+          <g fill="none" stroke="#F5F5F7" stroke-width="1.2" stroke-linecap="round">
+            <path opacity=".25" d="M150 356C250 356 310 276 400 276C540 276 640 191 820 206C930 216 980 326 1060 326"/>
+            <path opacity=".45" d="M150 366C250 366 310 286 400 286C540 286 640 201 820 216C930 226 980 336 1060 336"/>
+            <path opacity=".45" d="M150 394C250 394 310 314 400 314C540 314 640 229 820 244C930 254 980 364 1060 364"/>
+            <path opacity=".25" d="M150 404C250 404 310 324 400 324C540 324 640 239 820 254C930 264 980 374 1060 374"/>
+          </g>
+          <path d="M150 380C250 380 310 300 400 300C540 300 640 215 820 230C930 240 980 350 1060 350" stroke="#333336" stroke-width="10" stroke-linecap="round" fill="none"/>
+          <path d="M150 380C250 380 310 300 400 300C540 300 640 215 820 230C930 240 980 350 1060 350" stroke="#5CE64C" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <g fill="#0E0E0E" stroke="#5CE64C" stroke-width="3">
+            <circle class="st" cx="150" cy="380" r="7.5" style="animation-delay:0s"/>
+            <circle class="st" cx="400" cy="300" r="7.5" style="animation-delay:2s"/>
+            <circle class="st" cx="820" cy="230" r="7.5" style="animation-delay:4s"/>
+            <circle class="st" cx="1060" cy="350" r="7.5" style="animation-delay:6s"/>
+          </g>
+          <text class="lbl" x="130" y="438.85" font-size="30">Москва</text>
+          <text class="lbl" x="380" y="350.69" font-size="22">Нижний Новгород</text>
+          <text class="lbl" x="800" y="181.69" font-size="22">Пермь</text>
+          <text class="lbl" x="898" y="408.85" font-size="30">Екатеринбург</text>
+          <text class="river" x="478" y="531.36">Волга</text>
+          <text class="river" x="752" y="571.36">Кама</text>
+          <text class="river" x="930" y="247.36">Урал</text>
+          <text class="lbl" x="56" y="70.69" font-size="22">Стоянки в пути</text>
+          <text class="big" x="56" y="128.62" font-size="56">15 минут</text>
+          <g id="marker" transform="translate(150 380)"><path transform="translate(-18 -18) scale(.8182)" d="M8 12H20L36 22L20 32H8L24 22L8 12Z" fill="#5CE64C"/></g>
+        </svg>
+      </div>
     </div>
   </section>
 
   <section class="band grad">
     <div class="wrap">
-      <div class="head"><h2>98,6% поездок по расписанию</h2><p>Опоздание считается с первой минуты. Если поезд задержится, предложим компенсацию до 100% стоимости билета.</p></div>
-      <div class="three">
-        <div class="tile"><svg viewBox="0 0 44 44" fill="none" stroke="#5CE64C" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M16 6 10 38M28 6l6 32M14 13h16M13 21h18M11.5 29h21"/></svg><h3>Своя линия</h3><p>Отдельная линия только для пассажирских поездов: без товарных составов и ожидания встречных.</p></div>
-        <div class="tile"><svg viewBox="0 0 44 44" fill="none" stroke="#5CE64C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="18" y="18" width="8" height="8" rx="1.5"/><rect x="5" y="19" width="10" height="6" rx="1"/><rect x="29" y="19" width="10" height="6" rx="1"/><path d="M15 22h3M26 22h3M22 26v5M17 35a7 7 0 0 1 10 0M13 39a12 12 0 0 1 18 0"/></svg><h3>Время по спутнику</h3><p>Положение поезда определяем по GPS и ГЛОНАСС – работает даже без интернета.</p></div>
-        <div class="tile"><svg viewBox="0 0 44 44" fill="none" stroke="#5CE64C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 6l13 5v10c0 8-6 14-13 17-7-3-13-9-13-17V11l13-5Z"/><path d="m16 22 4 4 8-8"/></svg><h3>Без переездов</h3><p>Линия огорожена по всей длине и не пересекает дороги.</p></div>
-      </div>
+      <div class="head"><h2>98,6% поездок<br>по расписанию</h2><p>Если поезд задержится, вернем до 100% стоимости билета</p></div>
+      <div class="cta center"><a class="btn lg" href="#top">Выбрать поезд</a></div>
     </div>
   </section>
 
   <section class="band dark" id="quiet">
     <div class="wrap">
-      <div class="head"><h2>58 дБ на скорости 300 км/ч</h2><p>Уровень шума как при разговоре: в вагоне можно работать и спать.</p></div>
+      <div class="head"><h2>58 дБ на скорости 300 км/ч</h2><p>Уровень шума как при разговоре: в вагоне можно работать и спать</p></div>
       <div class="media"><img src="img/quiet.png" width="1200" height="420" alt="Сравнение шума: 80 дБ в салоне самолёта и 58 дБ в поезде." loading="lazy"></div>
-    </div>
-  </section>
-
-  <section class="band dark" id="fares">
-    <div class="wrap">
-      <div class="head"><h2>Три класса обслуживания</h2></div>
-      <div class="three">
-        <div class="fare"><h3>Стандарт</h3><div class="price">4 900 ₽</div><ul><li>Кресло 2+2, розетка и USB-C</li><li>Wi-Fi на всём маршруте</li><li>Багаж до 36 кг</li></ul><a class="btn" href="#top">Купить</a></div>
-        <div class="fare hl"><span class="tag">Чаще всего выбирают</span><h3>Тихий вагон</h3><div class="price">6 900 ₽</div><ul><li>Отдельный вагон тишины</li><li>Кресло 2+1, столик для ноутбука</li><li>Приглушённый свет после 21:00</li></ul><a class="btn" href="#top">Купить</a></div>
-        <div class="fare"><h3>Бизнес</h3><div class="price">11 400 ₽</div><ul><li>Кресло 1+1, наклон до 150°</li><li>Обед и ужин включены</li><li>Посадка первыми</li></ul><a class="btn" href="#top">Купить</a></div>
-      </div>
+      <div class="cta center"><a class="btn lg" href="#top">Выбрать тихий вагон</a></div>
     </div>
   </section>
 
@@ -362,10 +317,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
       <div class="head"><h2>Как проходит поездка</h2></div>
       <div class="carousel">
         <div class="track" id="track" tabindex="0" aria-label="Фотографии поездки">
-          <figure class="slide"><img src="img/p1.jpg" width="1140" height="720" alt="Белый поезд с зелёной полосой идёт по огороженной линии через осенний лес"><figcaption><b>Линия огорожена по всей длине</b></figcaption></figure>
-          <figure class="slide"><img src="img/p2.jpg" width="1140" height="720" alt="Посадка пассажиров у вагона на перроне" loading="lazy"><figcaption><b>Перрон Москва-Восточная</b></figcaption></figure>
-          <figure class="slide"><img src="img/p3.jpg" width="1140" height="720" alt="Завтрак на столике у окна в вагоне-кафе" loading="lazy"><figcaption><b>Вагон-кафе</b><span>Горячие блюда и доставка к месту через приложение.</span></figcaption></figure>
-          <figure class="slide"><img src="img/p4.jpg" width="1140" height="720" alt="Поезд прибывает на вокзал вечером" loading="lazy"><figcaption><b>Прибытие в Екатеринбург</b><span>Выход в город в трёх минутах от вагона.</span></figcaption></figure>
+          <figure class="slide"><img src="img/p2.jpg" width="1140" height="720" alt="Посадка пассажиров у вагона на перроне"><figcaption><small>01 · Посадка</small><b>Перрон Москва-Восточная</b><span>Посадка открывается за 30 минут до отправления. Номер платформы и схема состава отображаются в приложении, вход в вагон по QR-коду из билета.</span><a href="#faq">Как добраться до вокзала →</a></figcaption></figure>
+          <figure class="slide"><img src="img/p1.jpg" width="1140" height="720" alt="Белый поезд с зелёной полосой идёт по огороженной линии через осенний лес" loading="lazy"><figcaption><small>02 · В пути</small><b>Работа и отдых в пути</b><span>Поезд идёт по огороженной линии со средней скоростью 232 км/ч. У каждого кресла розетка и USB-C, Wi-Fi работает на всём маршруте.</span><a href="#route">Остановки на маршруте →</a></figcaption></figure>
+          <figure class="slide"><img src="img/p3.jpg" width="1140" height="720" alt="Завтрак на столике у окна в вагоне-ресторане" loading="lazy"><figcaption><small>03 · Вагон-ресторан</small><b>Несколько видов меню</b><span>В вагоне-ресторане доступны основное, вегетарианское, детское и постное меню. Заказ оформляется у стойки или в приложении с доставкой к месту.</span><a href="#app">Заказ через приложение →</a></figcaption></figure>
+          <figure class="slide"><img src="img/p4.jpg" width="1140" height="720" alt="Поезд прибывает на вокзал вечером" loading="lazy"><figcaption><small>04 · Прибытие</small><b>Екатеринбург-Пассажирский</b><span>Выход в город в трёх минутах от вагона. У вокзала остановки метро и трамвая, стоянка такси.</span><a href="#top">Купить обратный билет →</a></figcaption></figure>
         </div>
         <div class="cnav">
           <div class="dots" id="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
@@ -382,9 +337,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
     <div class="wrap">
       <div class="head"><h2>Всё, что важно знать до поездки</h2></div>
       <div class="three">
-        <div class="info"><small>Вокзал</small><h3>Москва-Восточная</h3><p>Метро «Черкизовская». Вход к платформам со стороны Окружного проезда.</p><a href="#faq">Схема вокзала →</a></div>
+        <div class="info"><small>Животные</small><h3>Вагон для животных</h3><p>Кошки и небольшие собаки в переноске перевозятся в отдельном вагоне класса Стандарт. Животное указывается при покупке билета.</p><a href="#faq">Правила перевозки животных →</a></div>
         <div class="info"><small>Багаж</small><h3>До 36 кг бесплатно</h3><p>Чемодан и ручная кладь. Велосипед и лыжи — в отдельном отсеке вагона.</p><a href="#faq">Правила провоза →</a></div>
-        <div class="info"><small>Довезем вовремя</small><h3>До 100% от стоимости</h3><p>Если поезд прибудет в Екатеринбург позже расписания, до 100% стоимости билета вернётся на карту автоматически.</p><a href="#faq">Условия гарантии →</a></div>
+        <div class="info"><small>Довезем вовремя</small><h3>100% стоимости</h3><p>Если поезд прибудет в Екатеринбург позже расписания, вернем до 100% стоимости билета.</p><a href="#faq">Условия гарантии →</a></div>
       </div>
     </div>
   </section>
@@ -394,16 +349,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
       <div class="head"><h2>Электронный билет<br>в приложении</h2></div>
       <div class="app">
         <div class="phone"><img src="img/phone.png" width="592" height="712" alt="Экран билета в приложении Люмен: время 08:10 и 18:00, вагон 08, место 12, QR-код" loading="lazy"></div>
-        <div class="steps">
-          <div class="step"><h3>Билет без сети</h3><p>QR-код, место и маршрут сохраняются в приложении. Билет доступен без подключения к интернету.</p></div>
-          <div class="step"><h3>Живой таймлайн</h3><p>Положение поезда определяется по спутниковой навигации. Время прибытия обновляется каждую минуту.</p></div>
-          <div class="step"><h3>Забота о близких</h3><p>Для встречающего доступна страница поездки с положением поезда, временем прибытия и номером вагона.</p></div>
+        <div class="strip">
+          <div class="dl"><h3>Скачать приложение Люмен</h3>
+          <div class="stores"><span class="btn ghost">App Store</span><span class="btn ghost">RuStore</span><span class="btn ghost">Google Play</span></div></div>
         </div>
-      </div>
-      <div class="strip">
-        <div class="qr"><canvas id="qr" width="188" height="188" aria-label="QR-код для скачивания приложения"></canvas></div>
-        <h3>Скачать приложение Люмен</h3>
-        <div class="stores"><span class="btn ghost">App Store</span><span class="btn ghost">RuStore</span><span class="btn ghost">Google Play</span></div>
       </div>
     </div>
   </section>
@@ -414,7 +363,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
         <div class="qa">
           <details open><summary>Откуда отправляется поезд?</summary><p>Из Москвы — с вокзала Москва-Восточная. В Екатеринбурге — Екатеринбург-Пассажирский.</p></details>
           <details><summary>Можно ли сдать билет?</summary><p>Да, в приложении или на сайте. При возврате больше чем за 24 часа до отправления возвращается вся сумма, позже 75%.</p></details>
-          <details><summary>Что с багажом и животными?</summary><p>Чемодан до 36 кг и ручная кладь провозятся бесплатно. Кошки и небольшие собаки в переноске допускаются в вагонах Стандарт, это отмечается при покупке.</p></details>
+          <details><summary>Что с багажом и животными?</summary><p>Чемодан до 36 кг и ручная кладь провозятся бесплатно. Кошки и небольшие собаки в переноске перевозятся в отдельном вагоне класса Стандарт, животное указывается при покупке билета.</p></details>
           <details><summary>Есть ли еда в поезде?</summary><p>Вагон-кафе находится в середине состава, доставка к месту доступна через приложение. В классе Бизнес обед и ужин входят в стоимость билета.</p></details>
         </div>
         <div class="side">
@@ -439,36 +388,35 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
   [845.6,313.8,5.4,23,17.2,"386734",2.3],[933,336.5,7.3,31.2,17.2,"3e7c38",3],[1002.8,354.6,8.9,37.8,17.2,"438d3c",3.7],[1058.7,369.1,10.1,43,17.2,"479b3e",4.2],[1094.4,378,29.9,47.2,17.2,"4aa741",6],[1139.2,390,11.9,50.6,17.2,"4db042",4.9],[1167.8,397.5,12.5,53.3,17.2,"4fb844",5.2],[1190.7,403.4,13,55.4,17.2,"51be45",5.4],[1209.6,408.4,12.2,57.1,17.2,"52c346",5.1],[1225.5,412.6,9.8,58.5,17.2,"53c747",4.1],
   [548.2,352.3,3,12.8,120.1,"324f30",1.3],[506.7,434.2,5.4,23,120.1,"386734",2.3],[473.5,499.6,7.3,31.2,120.1,"3e7c38",3],[454.9,538.4,40.4,37.8,120.1,"438d3c",6],[425.7,593.9,10.1,43,120.1,"479b3e",4.2],[408.8,627.4,11.1,47.2,120.1,"4aa741",4.6],[395.2,654.3,11.9,50.6,120.1,"4db042",4.9],[384.3,675.7,12.5,53.3,120.1,"4fb844",5.2],[375.6,692.9,13,55.4,120.1,"51be45",5.4],[367.9,707.8,10.6,57.1,120.1,"52c346",4.4],[361.8,719.9,8.5,58.5,120.1,"53c747",3.5],[356.8,729.5,6.8,59.6,120.1,"54cb47",2.8],[352.9,737.2,5.4,60.5,120.1,"55cd48",2.3],[349.7,743.4,4.3,61.2,120.1,"56cf48",1.8],[347.2,748.3,3.5,61.7,120.1,"56d149",1.4],[345.2,752.3,2.8,62.2,120.1,"56d249",1.2],
   [662.9,345.9,3,12.8,59.9,"324f30",1.3],[713.2,422.6,5.4,23,59.9,"386734",2.3],[753.5,484,7.3,31.2,59.9,"3e7c38",3],[777.8,519.4,40.4,37.8,59.9,"438d3c",6],[811.5,572.4,10.1,43,59.9,"479b3e",4.2],[832.1,603.8,11.1,47.2,59.9,"4aa741",4.6],[848.6,628.9,11.9,50.6,59.9,"4db042",4.9],[861.8,649,12.5,53.3,59.9,"4fb844",5.2],[872.3,665.1,13,55.4,59.9,"51be45",5.4],[881.5,679.2,10.6,57.1,59.9,"52c346",4.4],[888.9,690.6,8.5,58.5,59.9,"53c747",3.5],[894.8,699.6,6.8,59.6,59.9,"54cb47",2.8],[899.5,706.9,5.4,60.5,59.9,"55cd48",2.3],[903.2,712.7,4.3,61.2,59.9,"56cf48",1.8],[906.3,717.4,3.5,61.7,59.9,"56d149",1.4],[908.7,721.1,2.8,62.2,59.9,"56d249",1.2]];
-  const NS="http://www.w3.org/2000/svg", svg=document.getElementById("bars"), CX=600, CY=300;
-  const bars=B.map(([x,y,w,h,r,c,rx])=>{
+  /* волна по лучам от точки схода: старт вспышки каждой плашки, с (из анимации макета; после 1,9 с шаг продолжен с тем же замедлением 0,82) */
+  const S=[.48,.86,1.17,1.42,1.61,1.77,1.9,2.01,2.09,2.17,2.23,2.27,2.31,2.35,2.37,2.4];
+  const NS="http://www.w3.org/2000/svg", svg=document.getElementById("bars");
+  B.forEach(([x,y,w,h,r,c,rx],i)=>{
     const g=document.createElementNS(NS,"g"); g.setAttribute("transform",`translate(${x} ${y}) rotate(${r})`);
     const el=document.createElementNS(NS,"rect"); el.setAttribute("width",w); el.setAttribute("height",h); el.setAttribute("rx",rx); el.setAttribute("fill","#"+c); el.setAttribute("class","bar-r");
+    el.style.animationDelay=(i<60?S[i%10+1]:S[(i-60)%16])+"s";
     g.appendChild(el); svg.appendChild(g);
-    const d=Math.hypot(x-CX,(y-CY)*1.4); return {el,d};
   });
-  const maxD=Math.max(...bars.map(b=>b.d));
-  bars.forEach(b=>b.t=b.d/maxD);
-  const scene=document.getElementById("speed"), light=document.getElementById("light");
   const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const clamp=v=>Math.max(0,Math.min(1,v));
   /* меню видно только на первом экране */
   const navEl=document.querySelector(".nav"), heroEl=document.querySelector(".hero");
   const navToggle=()=>navEl.classList.toggle("off",heroEl.getBoundingClientRect().bottom<90);
   addEventListener("scroll",navToggle,{passive:true}); navToggle();
-  let shown=-1;
-  function update(){
-    const r=scene.getBoundingClientRect(), span=r.height-innerHeight;
-    const p=span>0?clamp(-r.top/span):1;
-    const bp=clamp((p-.1)/.45);           /* плашки: 10–55% прокрутки сцены */
-    const lp=clamp((p-.6)/.3);            /* свет: 60–90% */
-    const k=Math.round(bp*100);
-    if(k!==shown){shown=k;
-      bars.forEach(b=>{const on=bp>=b.t*.94; b.el.style.opacity=on?1:0; b.el.style.transform=on?"none":"scale(.2)";});
-    }
-    light.style.opacity=lp;
-    light.style.transform=`translate(${-30+30*lp}%,-50%) rotate(-4deg)`;
-  }
-  if(!reduce){addEventListener("scroll",update,{passive:true});addEventListener("resize",update);update();}
+
+  /* свечение слева: 0, когда центр блока на 60% высоты экрана ниже середины, 1, когда блок по центру */
+  const scene=document.getElementById("speed"), light=document.getElementById("light");
+  const glow=()=>{const r=scene.getBoundingClientRect(), c=r.top+r.height/2-innerHeight/2, lp=Math.max(0,Math.min(1,1-c/(innerHeight*.6)));
+    light.style.opacity=lp; light.style.transform=`translate(${-30+30*lp}%,-50%) rotate(-4deg)`;};
+  if(!reduce){addEventListener("scroll",glow,{passive:true});addEventListener("resize",glow);glow();}
+
+  /* поезд на карте: 19 точек пути за 6 с (по 1/3 с), станции в 0, 2, 4 и 6 с */
+  const P=[[0,0],[47,-6],[89,-21],[129,-40],[167,-59],[207,-74],[250,-80],[317,-86],[381,-101],[445,-121],[512,-139],[586,-150],[670,-150],[720,-138],[763,-114],[801,-86],[837,-59],[872,-38],[910,-30]];
+  const marker=document.getElementById("marker");
+  const ride=reduce?null:marker.animate(P.map(([x,y])=>({transform:`translate(${150+x}px,${380+y}px)`})),{duration:6000,iterations:Infinity,easing:"linear"});
+  if(ride) ride.pause();
+  /* анимации идут, только пока блок на экране */
+  const io=new IntersectionObserver(es=>es.forEach(e=>{e.target.classList.toggle("run",e.isIntersecting); if(ride&&e.target.id==="route") e.isIntersecting?ride.play():ride.pause();}));
+  [document.getElementById("speed"),document.getElementById("route")].forEach(el=>io.observe(el));
 
   /* листалка */
   const track=document.getElementById("track"), slides=[...track.children], dots=[...document.getElementById("dots").children];
@@ -482,15 +430,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
   track.addEventListener("scroll",()=>requestAnimationFrame(sync),{passive:true}); sync();
 
   /* поиск */
-  document.querySelectorAll(".swap").forEach(b=>b.onclick=()=>{const a=document.getElementById("f-from"),c=document.getElementById("f-to");[a.value,c.value]=[c.value,a.value];});
-  document.getElementById("search-top").addEventListener("submit",e=>{e.preventDefault();const b=e.target.querySelector(".go b");b.textContent="4 поезда на завтра";});
-
-  /* QR (макет) */
-  const cv=document.getElementById("qr"), ctx=cv.getContext("2d"), N=25, m=cv.width/N;
-  const hash=(x,y)=>{let h=(x*374761393+y*668265263+7*982451653)|0;h=(h^(h>>>13))*1274126177|0;return((h^(h>>>16))>>>0)/4294967295;};
-  ctx.fillStyle="#fff";ctx.fillRect(0,0,cv.width,cv.width);ctx.fillStyle="#000";
-  for(let y=0;y<N;y++)for(let x=0;x<N;x++){const f=(x<8&&y<8)||(x>N-9&&y<8)||(x<8&&y>N-9);if(!f&&hash(x,y)>.52)ctx.fillRect(x*m,y*m,m+.3,m+.3);}
-  [[0,0],[N-7,0],[0,N-7]].forEach(([gx,gy])=>{ctx.fillStyle="#000";ctx.fillRect(gx*m,gy*m,7*m,7*m);ctx.fillStyle="#fff";ctx.fillRect((gx+1)*m,(gy+1)*m,5*m,5*m);ctx.fillStyle="#000";ctx.fillRect((gx+2)*m,(gy+2)*m,3*m,3*m);});
+  document.querySelectorAll(".swap").forEach(b=>b.onclick=()=>{const f=b.closest("form"),a=f.querySelector("[name=from]"),c=f.querySelector("[name=to]");[a.value,c.value]=[c.value,a.value];});
+  document.querySelectorAll("form.search").forEach(f=>f.addEventListener("submit",e=>{e.preventDefault();f.querySelector(".go b").textContent="4 поезда на завтра";}));
 })();
 </script>
 
